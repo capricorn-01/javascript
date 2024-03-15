@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       // let i=0;
+       // while(i<=100){
+//console.log(i)
+//i++;
+  //      }
+
+  //let a=prompt("enter number")
+ // let i=0;
+
+ // while(i<=a){
+  //  if(i==a/2){
+   //     break;
+   // }
+   // console.log(i)
+    //i++;
+  //}
+
+ // let a=prompt("enter number")
+  //let i=0;
+ // let sum=0;
+
+ // while(i<=a){
+  //  if(i%2!=0){
+   //     console.log(i)
+   //     sum=sum+i
+   // }
+   // i++;
+ // }
+ // console.log(sum)
+
+
+ let num=145;
+ let originalnum =num;
+ let sum=0;
+ while(num>0){
+    let i= num%10;
+    let fact=1;
+    for(let j=i; j>=1; j--){
+    fact=fact*j;
+    }
+sum= sum + fact;
+num=parseInt(num/10);
+ }
+
+ console.log(sum)
+ if(originalnum==sum){
+    console.log("strong number")
+ }
+ else{
+    console.log("not strong number")
+ }
+
+
+
+    </script>
+</body>
+</html>
