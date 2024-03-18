@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="swap">swap</button>
+    <input type="text" placeholder="enter your number 1:" id="inp1">
+    <input type="text" placeholder="enter your number 2:" id="inp2">
+
+    <script>
+     document.getElementById("swap").onclick = function() {
+        let a= Number(document.getElementById("inp1").value);
+        let b= Number(document.getElementById("inp2").value);
+        let temp=a;
+        a=b;
+        b=temp;
+        document.getElementById("inp1").value=a;
+        document.getElementById("inp2").value=b;
+
+     }
+    </script>
+</body>
+</html>
