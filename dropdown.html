@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="select">
+        <option value="+">Add</option>
+        <option value="-">minus</option>
+        <option value="*">multiply</option>
+        <option value="/">divide</option>
+    </select>
+    <input type="text" placeholder="enter your number 1:" id="inp1">
+    <input type="text" placeholder="enter your number 2:" id="inp2">
+<h1 id="h"></h1>
+    <script>
+        document.getElementById("select").onclick = function() {
+
+let s = document.getElementById("select").value;
+        let a=Number(document.getElementById("inp1").value);
+        let b=Number(document.getElementById("inp2").value);
+
+        if(s=="+"){
+            console.log(a+b)
+        }
+        else if(s=="-"){
+            console.log(a-b)
+        }
+        else if(s=="*"){
+            console.log(a*b)
+        }
+        else if(s=="/"){
+            console.log(a/b)
+        }
+    }
+    </script>
+</body>
+</html>
