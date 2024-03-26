@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+.box1{
+    height: 25rem;
+    width: 600px;
+    border: 2px solid black;
+}
+.box2{
+    height: 20rem;
+    width: 500px;
+    border: 2px solid black;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.circle{
+    height: 10rem;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 300px;
+}
+dd{
+    margin: 40px;
+}
+img{
+    height: 100%;
+    border-radius: 300px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h2>Image:</h2>
+            <input type="text" placeholder="Enter Image Link" id="inp1">
+
+            <h2>Name:</h2>
+            <input type="text" placeholder="Enter Your Name" id="inp2">
+
+            <h2>Email:</h2>
+            <input type="text" placeholder="Enter Your Email" id="inp3">
+
+            <h2>Course:</h2>
+            <input type="text" placeholder="Enter Your Course" id="inp4">
+
+            <h2>Mobile:</h2>
+            <input type="text" placeholder="Enter Your Mobile" id="inp5">
+        </div>
+        <div class="box2">
+            <div class="circle" id="c1">
+                <img src="" alt="">
+            </div>
+            <dd>
+                <li id="l1">Name: <span class="name"></span></li>
+                <li id="l2">Email: <span class="email"></span></li>
+                <li id="l3">Course: <span class="course"></span></li>
+                <li id="l4">Mobile No: <span class="mobile"></span></li>
+                
+            </dd>
+        </div>
+    </div>
+
+    <script>
+             let a = document.getElementById("inp2");
+             a.onkeyup=function(){
+                document.querySelector(".name").innerText=a.value;
+             }
+
+             let b = document.getElementById("inp3");
+             b.onkeyup=function(){
+                document.querySelector(".email").innerText=b.value;
+             }
+        
+             let c = document.getElementById("inp4");
+             c.onkeyup=function(){
+                document.querySelector(".course").innerText=c.value;
+             }
+
+             let d = document.getElementById("inp5");
+             d.onkeyup=function(){
+                document.querySelector(".mobile").innerText=d.value;
+             }
+
+             let e = document.querySelector("#inp1")
+             e.onkeyup=function(){
+                document.querySelector("img").src=e.value;
+             }
+
+    </script>
+</body>
+</html>
