@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" placeholder="enter your text">
+    <button>submit</button>
+    <p></p>
     <script>
-        let x=[10,20,30,40,50,60,70,80,90,100]
+        //let x=[10,20,30,40,50,60,70,80,90,100]
        // console.log(x.slice(2.6))
 
     //   let y= x.slice(2,6)
@@ -30,7 +33,42 @@
   // })
    //  console.log(ans)
 
-   
+   //let y = "10,20,30,40,50,60,70"
+  // let a = y.split(",")
+  // let b=  a.join(",")
+  // console.log(typeof(y))
+
+  //let a=[10,20,30,[5,6,7,],40,50,60,["mob,cop"]]
+  //console.log(a.flat())
+
+  //let a= [10,20,30]
+  //a.push("harsh")
+  //a.pop()
+  //a.shift()
+ // a.unshift("aman")
+
+ //let a= ['mohit','rohit','mohan','anu']
+//let y = a.filter((item)=>{
+//    return item[0] == 'm'
+//})
+
+document.querySelector("button").onclick = function(){
+    let a=document.querySelector("input").value
+    let x=['harshit','mohit','rohit','anu']
+
+    let y=x.filter((item)=>{
+        return item == a;
+    })
+    if(data.length != 0){
+        alert(`value found ${x[0]}`)
+    }
+    else{
+        alert("not available in database")
+    }
+
+   console.log(y)
+}
+
 
     </script>
 </body>
