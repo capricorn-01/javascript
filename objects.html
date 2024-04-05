@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your text">
+    <button>submit</button>
+<script>
+
+
+    let obj1 = [{
+    id:1,
+    name: "Harshit",
+    age: 23,
+},
+{
+    id:2,
+    name: "Harsh",
+    age: 21,
+},
+{
+    id:3,
+    name: "Mohit",
+    age: 25,
+},
+{
+    id:4,
+    name: "Rohit",
+    age: 17,
+},
+{
+    id:5,
+    name: "Shivam",
+    age: 16,
+},
+{
+    id:6,
+    name: "Suraj",
+    age: 21,
+},
+{
+    id:7,
+    name: "Shubham",
+    age: 18,
+},
+{
+    id:8,
+    name: "Babli",
+    age: 17,
+},
+{
+    id:9,
+    name: "Gangu",
+    age: 17,
+},
+{
+    id:10,
+    name: "Vijay",
+    age: 24,
+}
+]
+
+let b=obj1.filter((item)=>{
+    return item.age < 18;
+})
+
+
+console.log(b)
+
+</script>
+
+</body>
+</html>
