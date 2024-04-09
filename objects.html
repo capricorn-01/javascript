@@ -15,62 +15,130 @@
     id:1,
     name: "Harshit",
     age: 23,
+  marks:  {
+          Hindi:56,
+          Maths:45,
+          English:70,
+    }
 },
 {
     id:2,
     name: "Harsh",
     age: 21,
+    marks:  {
+          Hindi:32,
+          Maths:40,
+          English:32,
+    }
 },
 {
     id:3,
     name: "Mohit",
     age: 25,
+    marks:  {
+          Hindi:60,
+          Maths:50,
+          English:75,
+    }
 },
 {
     id:4,
     name: "Rohit",
     age: 17,
+    marks:  {
+          Hindi:60,
+          Maths:52,
+          English:50,
+    }
 },
 {
     id:5,
     name: "Shivam",
     age: 16,
+    marks:  {
+          Hindi:60,
+          Maths:42,
+          English:70,
+    }
 },
 {
     id:6,
     name: "Suraj",
     age: 21,
+    marks:  {
+          Hindi:63,
+          Maths:52,
+          English:79,
+    }
 },
 {
     id:7,
     name: "Shubham",
     age: 18,
+    marks:  {
+          Hindi:35,
+          Maths:45,
+          English:34,
+    }
 },
 {
     id:8,
     name: "Babli",
     age: 17,
+    marks:  {
+          Hindi:50,
+          Maths:48,
+          English:70,
+    }
 },
 {
     id:9,
     name: "Gangu",
     age: 17,
+    marks:  {
+          Hindi:51,
+          Maths:34,
+          English:36,
+    }
 },
 {
     id:10,
     name: "Vijay",
     age: 24,
+    marks:  {
+          Hindi:38,
+          Maths:40,
+          English:37,
+    }
 }
 ]
 
-let b=obj1.filter((item)=>{
-    return item.age < 18;
+//let b=obj1.filter((item)=>{
+ //   return item.age > 18;
+//})
+
+
+    //let b=obj1.filter((item)=>{
+    //return item.marks.English+item.marks.Hindi+item.marks.Maths*100/300 > 75
+//})
+
+
+//let  b=obj1.filter((item)=>{
+ //   return item.name[0] == "H";
+//})
+
+let  b=obj1.filter((item)=>{
+    return item.name.includes("a");
 })
-
-
 console.log(b)
 
+
+
+
+
 </script>
+
+
 
 </body>
 </html>
