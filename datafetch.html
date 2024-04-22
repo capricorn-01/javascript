@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" />
+    <button>Submit</button> <br />
+    <br />
+
+    <script>
+
+async function FetchData() {
+   
+    let data = await fetch('https://dummyjson.com/products')
+    let json_data = await data.json();
+    json_data.products.map((item)=>{
+        let d = document.createElement("div");
+        let i = document.createElement("img");
+        let h2 = document.createElement("h2");
+        let h3 = document.createElement("h3");
+        i.src = item.images[0];
+          h2.innerText = "Title : " + item.title;
+          h3.innerText = "Price : " + item.price;
+
+        d.append(i);
+          d.append(h2);
+          d.append(h3);
+          document.body.append(d);
+          console.log(d);
+
+
+          document.querySelector("button").onclick = function(){
+            let a = document.querySelector("input").value
+
+            let b = json_data.products.filter((item)=>{
+                    return item.title == a;
+            })
+            console.log(b);
+          }
+    })
+
+}
+FetchData();
+
+    </script>
+</body>
+</html>
